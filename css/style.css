@@ -24,21 +24,44 @@ body {
     background: url(../img/logo.png) no-repeat center;
     text-indent: -50000px;
 }
-/*
-.menu-horizontal {
-    border: 1px solid red;
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
 }
 .menu-horizontal ul {
-    list-style-type: none;
-    
-}
-.menu-horizontal ul li {
-    border: 1px solid orange;
+    margin-top: 30px;
+    background: #b10333;
     float: left;
 }
-.menu-horizontal a {
-    border: 1px solid red;
-    color: white;
-    text-decoration: none;
+.menu-horizontal ul li {
+    float: left;
 }
-*/
+.menu-horizontal ul a {
+    font-size: 0.9em;
+    display: block;
+    padding: 0.5em 1.5em;
+    line-height: 2.1em;
+    text-decoration: none;
+    color: white;
+    background: url(../img/divisor.png) no-repeat left center;
+}
+.menu-horizontal ul  .primeiro a {
+    background: none;
+}
+.menu-horizontal ul a:hover {
+    color:#69001d;
+}
+
+body.home .menu-horizontal a#home,
+body.brasil .menu-horizontal a#brasil,
+body.internacional .menu-horizontal a#internacional,
+body.economia .menu-horizontal a#economia,
+body.saude .menu-horizontal a#saude,
+body.ciencia .menu-horizontal a#ciencia,
+body.fotos .menu-horizontal a#fotos{
+    color: white;
+    background: #de003e;
+    cursor: text;
+}
